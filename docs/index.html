@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <style>
+      pre { padding: 10px; background-color: #eee; }
+    </style>
+  </head>
+  <body>
+    <h1>Shuuhoo</h1>
+    <div id="app">
+      <h2>Options</h2>
+      <p>
+        <label>Date : </label>
+        <span>{{ date }}</span>
+      </p>
+      <p>
+        <label>Name : </label>
+        <input v-model="name" placeholder="Input your name">
+      </p>
+      <h2>Template</h2>
+      <pre>{{ template() }}</pre>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
